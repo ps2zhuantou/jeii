@@ -1,14 +1,44 @@
-﻿#### 说明
+<a href="#readme">
+    <img src="https://img.vim-cn.com/13/38b511a1a39eca50a82a6b007e9b60c9a3320a.jpg" alt="图飞了😂" title="opentopd" align="right" height="180" />
+</a>
 
-* 软件不定期同步大神库更新，适合一键下载到package目录下，用于openwrt编译
+欢迎来到kenzo的源码仓库!
+==================================================
 
-* lede/package$下运行 或者openwrt/package$下运行
+Welcome to kenzo's  git source of packages
+-
+[kenzo のpackage 自用插件](https://github.com/kenzok78/jeii)
+==================================================
+
+#### jeii 
+
+*  就添加了几个自定义主题插件，修改ssh banner
+
+*  针对于自己个性化编译，不建议git clone此仓库
+
+#### 更新日志
+
+
+#### 使用方式（三选一）：
+
+1. 先cd进package目录，然后执行
 
 ```bash
- git clone https://github.com/kenzok8/litte.git
+ git clone https://github.com/kenzok78/jeii 
+```
+2. 或者添加下面代码到feeds.conf.default文件
+
+```bash
+ src-git jeii https://github.com/kenzok78/jeii 
+```
+3. lede/下运行 或者openwrt/下运行
+
+```bash
+git clone git clone https://github.com/kenzok78/jeii  package/jeii
 ```
 
-* Lean源码下快捷编译
+
+* Lean源码下快捷编译（如果git litte仓库地址的话）
 
 ```bash
 rm -rf package/litte/microsocks && rm -rf package/litte/redsocks2 && rm -rf package/litte/tcpping
@@ -21,7 +51,7 @@ make download -j7 V=s && find dl -size -1024c -exec ls -l {} \;
 make download && make -j$(nproc) V=s
 ```
 
-* Lienol源码下快捷编译
+* Lienol源码下快捷编译（如果git litte仓库地址的话）
 
 ```bash
 rm -rf package/litte/adguardhome && rm -rf package/litte/luci-app-adguardhome
@@ -34,7 +64,7 @@ make download -j7 V=s && find dl -size -1024c -exec ls -l {} \;
 make download && make -j$(nproc) V=s
 ```
 
-* ctc team源码下快捷编译
+* ctc team源码下快捷编译（如果git litte仓库地址的话）
 
 ```bash
 rm -rf package/lienol/luci-app-passwall && rm -rf package/lean/luci-app-ssr-plus
