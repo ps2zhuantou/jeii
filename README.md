@@ -2,13 +2,19 @@
     <img src="https://img.vim-cn.com/13/38b511a1a39eca50a82a6b007e9b60c9a3320a.jpg" alt="图飞了😂" title="opentopd" align="right" height="180" />
 </a>
 
-欢迎来到kenzo的源码仓库!
-==================================================
+## 部署环境(STEP 1):
 
-Welcome to kenzo's  git source of packages
--
-[kenzo のpackage 自用插件](https://github.com/kenzok78/jeii)
-==================================================
+1. 首先需要获取 **Github Token**: [点击这里](https://github.com/settings/tokens/new) 获取,
+
+   `Note`项填写一个名称,`Select scopes`不理解就**全部打勾**,操作完成后点击下方`Generate token`
+
+2. 复制页面中生成的 **Token**,并保存到本地,**Token 只会显示一次!**
+
+3. **Fork** 我的`AutoBuild-Actions`仓库,然后进入你的`AutoBuild-Actions`仓库进行之后的设置
+
+4. 点击上方菜单中的`Settings`,依次点击`Secrets`-`New repository secret`
+
+   其中`Name`项填写`GITHUB_TOKEN`,然后将你的 **Token** 粘贴到`Value`项,完成后点击`Add secert`
 
 #### jeii 
 
