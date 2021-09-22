@@ -1,21 +1,23 @@
 /**
- *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
- *
- *  luci-theme-material
- *      Copyright 2015 Lutty Yang <lutty@wcan.in>
- *
- *  Have a bug? Please create an issue here on GitHub!
- *      https://github.com/LuttyYang/luci-theme-opentomcat/issues
- *
- *  luci-theme-bootstrap:
- *      Copyright 2008 Steven Barth <steven@midlink.org>
- *      Copyright 2008 Jo-Philipp Wich <jow@openwrt.org>
- *      Copyright 2012 David Menting <david@nut-bolt.nl>
- *
- *  MUI:
- *      https://github.com/muicss/mui
- *
- *  Licensed to the public under the Apache License 2.0
+*	InfinityFreedom is a clean HTML5 theme for LuCI. It is based on luci-theme-material.
+*
+*	luci-theme-infinityfreedom
+*	Copyright 2020 Richard Yu <xiaoqingfengatgm@gmail.com>
+*
+*	Have a bug? Please create an issue here on GitHub!
+*	https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/issues
+*	
+*	luci-theme-material:
+*	Copyright 2015 Lutty Yang
+*
+*	luci-theme-bootstrap:
+*	Copyright 2008 Steven Barth <steven@midlink.org>
+*	Copyright 2008-2016 Jo-Philipp Wich <jow@openwrt.org>
+*	Copyright 2012 David Menting <david@nut-bolt.nl>
+*	MUI:
+*	https://github.com/muicss/mui
+*
+*	Licensed to the public under the Apache License 2.0
  */
 (function ($) {
     $(".main > .loading").fadeOut();
@@ -233,5 +235,4 @@
                 break;
         }
     }
-
 })(jQuery);

@@ -1,12 +1,17 @@
 <%#
-	Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
+	
+	ifit is a clean HTML5 theme for LuCI. It is based on luci-theme-material.
 
-	luci-theme-material
-	Copyright 2015-2017 Lutty Yang <lutty@wcan.in>
+	luci-theme-ifit
+	Copyright 2020 Richard Yu <xiaoqingfengatgm@gmail.com>
+	
+	luci-theme-material:
+	Copyright 2015 Lutty Yang
 
 	luci-theme-bootstrap:
+	Copyright 2008 Steven Barth <steven@midlink.org>
+	Copyright 2008-2016 Jo-Philipp Wich <jow@openwrt.org>
 	Copyright 2012 David Menting <david@nut-bolt.nl>
-
 	MUI:
 	https://github.com/muicss/mui
 
@@ -226,6 +231,23 @@
 		</div>
 	</div>
 </header>
+	<script>
+	var brandurl = '/luci-static/ifit/images/brand.png';
+	$.ajax({
+        url : brandurl,
+        type : 'HEAD',
+        error : function() {
+			var brand = $("body > header > div > a.brand");
+			brand.addClass('brandMark');
+        },
+        success : function() {
+			var brandContainer = $("header > .container > .brand");
+			brandContainer.addClass("brandWithBackground");
+			var brand = $("body > header > div > a.brand");
+			brand.html('');
+        }
+    });
+	</script>
 <div class="main">
 	<div style="" class="loading"><span><div class="loading-img"></div>Loading...</span></div>
 	<div class="main-left">
