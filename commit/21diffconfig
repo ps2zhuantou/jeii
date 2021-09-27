@@ -20,7 +20,6 @@ CONFIG_LIBCURL_TLS_SRP=y
 CONFIG_LIBCURL_UNIX_SOCKETS=y
 CONFIG_LIBMBEDTLS_HAVE_SSE2=y
 CONFIG_LIBSODIUM_MINIMAL=y
-CONFIG_PACKAGE_adguardhome=m
 CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_boost=y
 CONFIG_PACKAGE_boost-program_options=y
@@ -80,7 +79,8 @@ CONFIG_PACKAGE_libstdcpp=y
 CONFIG_PACKAGE_libuci-lua=y
 CONFIG_PACKAGE_libudns=y
 CONFIG_PACKAGE_libyaml=y
-CONFIG_PACKAGE_luci-app-adguardhome=m
+# CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary is not set
+CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-ddns=y
 CONFIG_PACKAGE_luci-app-mwan3=y
